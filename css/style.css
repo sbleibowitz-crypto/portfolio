@@ -53,7 +53,11 @@
 /*** JUMBOTRON ***/
 
 .jumbotron {
-    background-image: url("../assets/contour-lines.png");
+    background-image: url("/assets/(roundabouts) G572 Lab 1 content/roundabout_1 copy.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
     text-align: center;
     color: #fff;
     padding: 3%;
@@ -68,6 +72,10 @@
 .img-responsive{
     width:100%;
 }
+
+
+
+
 
 /*** CARD ***/
 

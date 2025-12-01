@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Subway Map</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">    
+
+  <link rel="stylesheet" href="./lib/scrollmap.css">
+  <link rel="stylesheet" href="./lib/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="content">
+        <!--title block, background image is title image-->
+        <div class="row" style="background-color: #e3ecf2;">
+            <div class="center title">
+                <!-- title text -->
+                <h1>Subway Map</h1>
+                <!-- subtitle or author -->
+                <p class="author" style="color:#13a3dc; font-size:30px">Sam Leibowitz</p>
+            </div>
+        </div>
+
+        <!--text block-->
+        <div class="row">
+            <div class="center">
+                <p>My style takes inspiration from modern American subway maps, such as:</p>
+                <p>Washington D.C.,</p>
+                <img class="fit" src="img/dc_metro_map.png">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="center">
+                <p>New York City,</p>
+                <img class="fit" src="img/nyc_metro.png">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="center">
+                <p>and Chicago.</p>
+                <img class="fit" src="img/chicago_metro.png">
+            </div>
+        </div>
+    
+        <!--subway map color palette-->
+        <div class="row">
+            <div class="left">
+                <p class="vert-center">From these maps, I gathered a sample color palette that accentuates key characteristics of a subway map: bright, vivid hues, along with high-contrast grays and light shades of green and blue for land and water, respectively.</p>
+            </div>
+            <div class="right">
+                <img class="fit" src="img/overall color palette.png">
+            </div>
+        </div>
+        
+        
+
+        <!--bootstrap carousel, centered-->
+        <div class="row">
+            <div class="center-wide">
+                <p>The map exaggerates place names and diverse forms of transit, like rail, subway, and pedestrian paths. Finer and less vivid road lines pull attention away from car-centric infrastructure.</p>
+                <p>Other design inspirations include curved lines with rounded caps, a lack of drop shadow behind text for a clean, flat appearance, and a mix of solid and dotted gray lines for territorial borders.</p>
+                <!--slideshow of images, also known as a carousel-->
+                <!--remove "carousel-dark" if you want a lighter version of the carousel-->
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                    <!--indicator buttons at the bottom of the carousel that show the total number of slides-->
+                    <div class="carousel-indicators">
+                        <!--there should be as many of these buttons as there are slides in your carousel-->
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+
+                    <!--images in the carousel-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/zoom_A.png" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/zoom_B.png" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/zoom_C.png" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/zoom_E.png" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/zoom_F.png" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/zoom_H.png" class="w-100" alt="...">
+                        </div>
+                    </div>
+
+                    <!--previous/next buttons that allow users to click from one slide to the next-->
+                    <button id="prev-button" class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button id="next-button" class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="center">
+                <p>Different modes of transportation are represented by different colors, resulting in some awesome looking maps. For example:</p>
+            </div>
+        </div>
+
+        <!--background images with text scrolling over them-->
+        
+        <div class="scroll-container">    
+            <!--background images-->
+            <div class="background-item">
+                <!--data-slide property used to specify when the background should first-->
+                <img src="img/airport.png" data-slide="0" class="fill vert-center">
+                <img src="img/ferry.png" data-slide="1" class="fill vert-center hidden">
+                <img src="img/pedestrian.png" data-slide="2" class="fill vert-center hidden">
+                <img src="img/rail.png" data-slide="3" class="fill vert-center hidden">
+                <img src="img/skilift.png" data-slide="4" class="fill vert-center hidden">
+                <img src="img/subway.png" data-slide="5" class="fill vert-center hidden">
+            </div>
+            <!--foreground text blocks-->
+            <div class="foreground-item no-event">
+                <div class="row">
+                    <div class="left background-transparent rounded">
+                        <p class="no-margin">purple airport runways,</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left background-transparent rounded">
+                        <p class="no-margin">blue ferry lines,</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left background-transparent rounded">
+                        <p class="no-margin">green pedestrian paths, trails, and residential streets,</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left background-transparent rounded">
+                        <p class="no-margin">red railways,</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left background-transparent rounded">
+                        <p class="no-margin">orange aeroways (such as chairlifts, cable cars, and light rail),</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left background-transparent rounded">
+                        <p class="no-margin">and, of course, subway lines in yellow!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--mapbox iframe-->
+        <div class="row sm-margin">
+            <div class="center-wide">
+                <p>Check out the full map here.</p>
+                <iframe
+                    src="https://api.mapbox.com/styles/v1/samleibowitz2/cmgl0jk0n002301s33bp9hj2i.html?title=view&access_token=pk.eyJ1Ijoic2FtbGVpYm93aXR6MiIsImEiOiJjbWdsMGdsdGcwYjFoMm1weWJjajVqZ3gwIn0.xl3xIrCcuS8eYfmS_iCdIg&zoomwheel=true&fresh=true#0/0/0"
+                    class="map-frame"
+                ></iframe>
+            </div>
+        </div>
+
+        
+
+        <!--text block-->
+        <div class="row no-margin">
+            <div class="center">
+                <div class="credits">
+                    <hr>
+                    <p><b>Credits:</b></p>
+                    <p>Map created with Mapbox Studio</p>
+                    <p>Data from openstreetmap</p>
+                    <p>Images from the MTA, WMATA, and CTA.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<script type="text/javascript" src="./lib/scrollmap.js"></script>
+<script type="text/javascript" src="./lib/bootstrap.min.js"></script>
+
+</body>
+</html>
