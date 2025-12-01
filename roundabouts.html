@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Roberta Rothers</title>
+    <title>Sam Leibowitz</title>
     <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> -->
 
     <!--put your Bootstrap stylesheet links below this comment and above style.css-->
@@ -18,7 +18,7 @@
         <!-- Container inside the navbar header to span the page -->
         <div class="container-fluid">
             <!-- Creates the navbar header -->
-            <a class="navbar-brand" href="index.html">Roberta Rothers</a>
+            <a class="navbar-brand" href="index.html">Sam Leibowitz</a>
             <!-- This complex script is just for a hamburger button, which will appear on smaller screens -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" xmlns="http://www.w3.org/2000/svg">
@@ -29,18 +29,11 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <!-- Unordered list for links on navbar -->
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resume.html">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
+                    
                 </ul>
             </div> <!-- end .navbar-collapse -->
         </div> <!-- end .container-fluid -->
@@ -49,22 +42,31 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <h2 class="portfolio-title">The Real Cost of Child Care</h2>
+                <h2 class="portfolio-title">The Reign of the Roundabout</h2>
                 <p class="portfolio-description">
-                    I was tasked with creating a compelling infographic to tell a visual story. This project morphed from just being a homework assignment into a topic that, the more I researched it, the more I believed in its importance. I had to think through how to distill information into a clear, informative story that educated the reader on the current state of child care in the U.S., explaining why it is an issue, where the issue is exacerbated, and why it's important to do something about it.
+                    For my first lab in GEOG 572, I was tasked with creating a scrollmap to tell a visual story, using Esri Storymaps. 
+                    The story had to follow a three-act narrative, using visual storytelling tropes like a hook, climax, resolution, etc.
+                    Because I have always been intrigued by road design and efficiency, I decided to dive into the topic of roundabouts: a remarkable feat of traffic engineering
+                    that has exploded across the United States, but also attracted pessimism. To effectively tell a story, I wove together a narrative of 
+                    growing traffic fatalities in the U.S., coupled with the increasing popularity of roundabouts. This involved deconstructing the data of traffic fatalities and explaining how roundabouts work.
+                    I then synthesized these data into a digestible map, and unpacked the resulting patterns between traffic fatalities and roundabout density.
+                    Check out my scrollmap here:
                 </p>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 portfolio-image figure-img img-fluid">
-                <a href="../assets/cost-of-childcare-infographic.png">
-                    <img src="../assets/cost-of-childcare-infographic.png" alt="Real Cost of Child Care Infographic" class="center-block img-responsive" max-width="100%" areheight="auto" />
-                </a>
-            </div>
-        </div>
+
+    <div class="iframe-wrapper">
+        <iframe 
+        src="https://storymaps.arcgis.com/stories/548377c04df2424297e05b1be8674853" 
+        width="90%" 
+        height="1000px" 
+        frameborder="0" 
+        allowfullscreen 
+        allow="geolocation">
+        </iframe>
     </div>
+
 
     <!--put your external script links here-->
     <script type="text/javascript" src="../lib/jquery-3.5.1.min.js"></script>

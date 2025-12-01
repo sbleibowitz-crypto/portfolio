@@ -128,3 +128,16 @@ body {
     background-color: #f1faf6;
     color: #242424;
 }
+
+
+.iframe-wrapper {
+  display: flex;
+  justify-content: center;   /* centers the iframe horizontally */
+  margin: 40px 0;            /* white space above and below */
+}
+
+.iframe-container {
+  width: 90%;                /* iframe takes 80% of page width */
+  height: 100vh;             /* fills full viewport height */
+  border: none;
+}
