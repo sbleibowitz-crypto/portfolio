@@ -1,9 +1,11 @@
 /***** NAVBAR *****/
 
 .navbar {
-    background-color: #42999b;
+    background-color: #549b42;
     border-radius: 0;
 }
+
+/*old colors used: 42999b (teal). */
 
 /* Navbar title */
 .navbar-default .navbar-brand {
@@ -17,7 +19,7 @@
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #ebd122;
+    color: #9af1f2;
     text-decoration: none;
 }
 
@@ -43,7 +45,7 @@
 
 .navbar-toggler:hover,
 .navbar-toggler:focus {
-    background-color: #ebd122;
+    background-color: #9af1f2;
     color: #242424;
     fill: #242424;
     border-color: #fff;
@@ -87,7 +89,7 @@
 }
 
 .card:hover {
-    border-color: #ebd122;
+    border-color: #549b42;
 }
 
 /*** Basic Text Styles ***/
@@ -111,11 +113,11 @@ p {
 }
 
 a {
-    color: #863ee3;
+    color: #549b42;
 }
 
 a:hover {
-    color: #ebd122;
+    color: #9af1f2;
 }
 
 .container{
@@ -125,7 +127,7 @@ a:hover {
 body {
 
     font-family: 'Georgia', serif;
-    background-color: #f1faf6;
+    background-color: #f5faf1;
     color: #242424;
 }
 
