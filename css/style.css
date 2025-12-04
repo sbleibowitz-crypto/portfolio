@@ -55,7 +55,7 @@
 /*** JUMBOTRON ***/
 
 .jumbotron {
-    background-image: url("https://github.com/sbleibowitz-crypto/portfolio/blob/54c900bc51e2726f3ac0dacb86b96152ea97380a/assets/roundaboutsG572Lab1Content/roundabout_1_copy.jpg");
+    background-image: url("assets/roundaboutsG572Lab1Content/roundabout_1_copy.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
